@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Github, Linkedin, Mail, Code2, Brain, Zap } from "lucide-react";
-import profileImage from "@/assets/vishal-profile.jpg";
+import profileImage from "@/assets/vishal-new-profile.jpg";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -122,20 +122,20 @@ const HeroSection = () => {
           <div className="relative flex justify-center lg:justify-end">
             {/* Main Profile Container */}
             <div className="relative">
-              {/* Profile Image */}
+              {/* Profile Image - Square Format */}
               <div className="relative z-20 animate-float">
-                <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent-purple/20 p-1 shadow-2xl">
-                  <div className="w-full h-full rounded-3xl overflow-hidden bg-gradient-to-br from-card-dark/50 to-card-dark/30 backdrop-blur-sm">
+                <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent-purple/20 p-1 shadow-2xl">
+                  <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-card-dark/50 to-card-dark/30 backdrop-blur-sm">
                     <img 
                       src={profileImage} 
-                      alt="Vishal Kanaujiya - AI & ML Enthusiast"
-                      className="w-full h-full object-cover"
+                      alt="Vishal Kanaujiya - AI & ML Developer"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                 </div>
                 
                 {/* Glowing Effect */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent-purple/20 rounded-3xl blur-2xl opacity-60 animate-pulse"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent-purple/20 rounded-2xl blur-2xl opacity-60 animate-pulse"></div>
               </div>
 
               {/* Floating Achievement Badge */}
