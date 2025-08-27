@@ -132,6 +132,8 @@ const ProjectsSection = () => {
                         onClick={() => {
                           if (project.title === "Customer Churn Prediction") {
                             window.open('https://github.com/vishalkk098/Customer-churn-prediction', '_blank');
+                          } else if (project.title === "Fake News Detection") {
+                            window.open('https://github.com/vishalkk098/fake-news-detection', '_blank');
                           }
                         }}
                       >
