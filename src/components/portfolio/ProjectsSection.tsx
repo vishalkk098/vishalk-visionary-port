@@ -129,6 +129,11 @@ const ProjectsSection = () => {
                       <Button 
                         variant="outline" 
                         className="flex items-center gap-2"
+                        onClick={() => {
+                          if (project.title === "Customer Churn Prediction") {
+                            window.open('https://github.com/vishalkk098/Customer-churn-prediction', '_blank');
+                          }
+                        }}
                       >
                         <Github className="h-4 w-4" />
                         View Code
