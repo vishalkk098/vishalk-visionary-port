@@ -1,6 +1,8 @@
-import { ExternalLink, Github, Brain, Microscope, Database, Car } from "lucide-react";
+import { ExternalLink, Github, Brain, TrendingUp, Shield, Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import selfDrivingCarImage from "@/assets/self-driving-car-project.jpg";
+import customerChurnImage from "@/assets/customer-churn-prediction.jpg";
+import fakeNewsImage from "@/assets/fake-news-detection.jpg";
 
 const ProjectsSection = () => {
   const projects = [
@@ -33,29 +35,31 @@ const ProjectsSection = () => {
       ]
     },
     {
-      title: "Brain Tumor Segmentation",
-      description: "Sophisticated segmentation system using Mask R-CNN with Detectron2 for precise tumor boundary identification and analysis in medical imaging.",
-      technologies: ["Python", "Detectron2", "Mask R-CNN", "PyTorch"],
-      icon: Microscope,
-      color: "accent-purple",
+      title: "Customer Churn Prediction",
+      description: "Machine learning system to predict customer churn using advanced algorithms and data analytics. Helps businesses identify at-risk customers and implement retention strategies.",
+      technologies: ["Python", "Scikit-learn", "Pandas", "XGBoost", "Data Analytics"],
+      icon: TrendingUp,
+      color: "primary",
+      image: customerChurnImage,
       features: [
-        "Precise tumor segmentation",
-        "Multiple tumor type detection",
-        "Advanced preprocessing",
-        "Clinical-grade accuracy"
+        "Predictive analytics modeling",
+        "Customer behavior analysis",
+        "Risk assessment scoring",
+        "Business intelligence insights"
       ]
     },
     {
-      title: "Machine Learning Portfolio",
-      description: "Collection of diverse ML projects including classification, prediction, and transfer learning applications on real-world datasets with comprehensive analysis.",
-      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter"],
-      icon: Database,
-      color: "primary",
+      title: "Fake News Detection",
+      description: "NLP-powered system using machine learning to identify and classify fake news articles. Features text analysis, sentiment detection, and credibility scoring for news verification.",
+      technologies: ["Python", "NLP", "NLTK", "TensorFlow", "Text Mining"],
+      icon: Shield,
+      color: "accent-purple",
+      image: fakeNewsImage,
       features: [
-        "Multiple ML algorithms",
-        "Data visualization",
-        "Model comparison",
-        "Performance metrics"
+        "Natural language processing",
+        "Sentiment analysis",
+        "Text classification",
+        "Credibility scoring"
       ]
     }
   ];
