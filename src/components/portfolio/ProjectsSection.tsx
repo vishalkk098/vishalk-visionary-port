@@ -1,8 +1,24 @@
-import { ExternalLink, Github, Brain, Microscope, Database } from "lucide-react";
+import { ExternalLink, Github, Brain, Microscope, Database, Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import selfDrivingCarImage from "@/assets/self-driving-car-project.jpg";
 
 const ProjectsSection = () => {
   const projects = [
+    {
+      title: "Self Driving Car with Computer Vision",
+      description: "Autonomous vehicle system using advanced computer vision algorithms for real-time object detection, lane recognition, and path planning. Features deep learning models for safe navigation and decision-making.",
+      technologies: ["Python", "OpenCV", "TensorFlow", "YOLO", "Computer Vision", "Deep Learning"],
+      icon: Car,
+      color: "accent-purple",
+      image: selfDrivingCarImage,
+      features: [
+        "Real-time object detection",
+        "Lane detection & tracking",
+        "Traffic sign recognition",
+        "Autonomous path planning",
+        "Collision avoidance system"
+      ]
+    },
     {
       title: "Brain Tumor Detection System",
       description: "Advanced deep learning model using CNN and Flask for accurate brain tumor detection from MRI scans. Features real-time analysis and user-friendly web interface.",
@@ -139,8 +155,16 @@ const ProjectsSection = () => {
                       </div>
                       
                       {/* Visual Element */}
-                      <div className="mt-8 h-32 bg-gradient-to-br from-primary/10 to-accent-purple/10 rounded-xl flex items-center justify-center">
-                        <IconComponent className={`h-16 w-16 text-${project.color}/30`} />
+                      <div className="mt-8 h-32 bg-gradient-to-br from-primary/10 to-accent-purple/10 rounded-xl flex items-center justify-center overflow-hidden">
+                        {project.image ? (
+                          <img 
+                            src={project.image} 
+                            alt={project.title}
+                            className="w-full h-full object-cover rounded-xl"
+                          />
+                        ) : (
+                          <IconComponent className={`h-16 w-16 text-${project.color}/30`} />
+                        )}
                       </div>
                     </div>
                   </div>
